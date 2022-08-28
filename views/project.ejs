@@ -1,0 +1,55 @@
+<%- include("header"); %>
+    <style>
+        .p-img {
+            margin: 0;
+            padding: 0;
+            width: 14rem;
+            height: 11rem;
+            border-radius: 1rem;
+            z-index: -1;
+        }
+
+        .col-md-6 {
+            padding: 0;
+            position: relative;
+            margin: 0.8rem;
+            margin-left: 0%;
+        }
+
+        .prm {
+            position: absolute;
+            color: rgba(0, 0, 0, 0);
+            bottom: -1rem;
+            z-index: 2;
+        }
+
+        .prm:hover {
+            text-shadow: 6px 6px 20px rgb(26, 25, 25);
+            color: rgb(18, 13, 13);
+            border-radius: 1rem;
+        }
+    </style>
+
+    <body>
+        <center>
+            <div class="row right-cont">
+                <div class="col-sm-6 col-md-6">
+                    <img class="p-img" src="Images/Project/Project1.png" alt="Project 1" srcset="">
+                    <p class="prm">Lorem ipsum dolor, sit amet consectetur.</p>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <img class="p-img" src="Images/Project/Project2.png" alt="Project 1" srcset="">
+                    <p class="prm">Lorem ipsum dolor, sit amet consectetur.</p>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <img class="p-img" src="images/Project/Project1.png" alt="Project 1" srcset="">
+                    <p class="prm">Lorem ipsum dolor, sit amet consectetur.</p>
+
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <img class="p-img" src="images/Project/Project2.png" alt="Project 1" srcset="">
+                    <p class="prm">Lorem ipsum dolor, sit amet consectetur.</p>
+                </div>
+            </div>
+        </center>
+    </body>

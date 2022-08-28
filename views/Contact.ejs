@@ -1,0 +1,73 @@
+<%- include("header"); %>
+
+    <body>
+        <div class="right-cont">
+            <% if(typeof alert != 'undefined') { %>
+                <% alert.forEach(function(error) { %>
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <%= error.msg %>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true">×</span>
+                        </button>
+                      </div>
+                <% }) %>
+            <% } %>
+            <form id="contact-form" class="contact-form" method="post" action="/contact" novalidate>
+
+                <div class="messages">
+                    <h5>Phone</h5>
+                    <p>+91 0000000000</p>
+                    <h5>Email Address</h5>
+                    <p>abc@123.com</p>
+                    <h5>Location</h5>
+                    <p>Anithing</p>
+                    <iframe class="maps"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.6102309532644!2d87.84456211524936!3d23.257266484834794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8361a58dcc565%3A0x37a42f6b23df16cd!2sUniversity%20Institute%20Of%20Technology%2C%20BU!5e0!3m2!1sen!2sin!4v1661445516114!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="row">
+                    <div class="column col-md-6">
+                        <!-- Name input -->
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="InputName" id="InputName"
+                                placeholder="Your name" required="required" data-error="Name is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+                    <div class="column col-md-6">
+                        <!-- Email input -->
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="InputEmail" name="InputEmail"
+                                placeholder="Email address" required="required" data-error="Email is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+                    <div class="column col-md-12">
+                        <!-- Email input -->
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="InputSubject" name="InputSubject"
+                                placeholder="Subject" required="required" data-error="Subject is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+                    <div class="column col-md-12">
+                        <!-- Message textarea -->
+                        <div class="form-group">
+                            <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5"
+                                placeholder="Message" required="required" data-error="Message is required."></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <button type="submit" name="submit" id="submit" value="Submit" class="btn"><i
+                            class="icon-paper-plane"></i>Send Message</button><!-- Send Button -->
+                </div>
+            </form>
+        </div>
+    </body>
+
+    </html>
