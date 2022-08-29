@@ -19,7 +19,7 @@ const contactSchema = {
     email: String,
     subject: String,
     message: String
-}
+};
 const Contact = mongoose.model("Contact", contactSchema);
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -76,8 +76,6 @@ app.post("/:id", [
         });
     }
 });
-
-
 let port = process.env.PORT;
 if (port == null || port == "") {
     port = 8000;
