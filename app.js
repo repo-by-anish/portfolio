@@ -14,7 +14,7 @@ mongoose.connect("mongodb+srv://Anish_62072:abc_123456@cluster0.6caodho.mongodb.
 //     email: String,
 //     contact: Number
 // };
-const contactSchema = {
+const contactSchema = {  
     name: String,
     email: String,
     subject: String,
