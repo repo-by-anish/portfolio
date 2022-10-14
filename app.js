@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const alert = require("alert");
 const ejs = require("ejs");
@@ -7,7 +8,7 @@ const mongoose = require("mongoose");
 const app = express();
 app.set('view engine', 'ejs');
 
-mongoose.connect("mongodb+srv://Anish_62072:abc_123456@cluster0.6caodho.mongodb.net/ContactDB");
+mongoose.connect(process.env.MONGODB);
 
 // const contactSchema = {
 //     name: String,
