@@ -9,22 +9,24 @@
             z-index: -1;
         }
 
-        .col-md-6 {
+        .col-md-4 {
             padding: 0;
             position: relative;
-            margin: 0.8rem;
             margin-left: 0%;
         }
-
+        a{
+            text-decoration: none;
+        }
         .prm {
             position: absolute;
-            color: rgba(0, 0, 0, 0);
-            bottom: -1rem;
+            top: 100%;
+            text-shadow: 6px 6px 20px rgb(14, 8, 8);
             z-index: 2;
+            left: 2rem;
         }
 
         .prm:hover {
-            text-shadow: 6px 6px 20px rgb(26, 25, 25);
+            text-shadow: 6px 6px 20px rgb(116, 107, 107);
             color: rgb(18, 13, 13);
             border-radius: 1rem;
         }
@@ -32,24 +34,25 @@
 
     <body>
         <center>
-            <div class="row right-cont">
-                <div class="col-sm-6 col-md-6">
+            <div class="row right-cont service">
+                <div class="col-sm-6 col-md-4">
                     <img class="p-img" src="Images/Project/Project1.png" alt="Project 1" srcset="">
-                    <p class="prm">Lorem ipsum dolor, sit amet consectetur.</p>
+                   <a class="prm text-center" target="_blank" href="https://warm-headland-63354.herokuapp.com/">View Project>>>></a>
                 </div>
-                <div class="col-sm-6 col-md-6">
-                    <img class="p-img" src="Images/Project/Project2.png" alt="Project 1" srcset="">
-                    <p class="prm">Lorem ipsum dolor, sit amet consectetur.</p>
+                <div class="col-sm-6 col-md-4">
+                    <img class="p-img" src="Images/Project/Project2.png" alt="Project 2" srcset="">
+                    <a class="prm text-center" target="_blank" href="https://mysterious-sierra-82285.herokuapp.com/">View Project>>>></a>
                 </div>
-                <div class="col-sm-6 col-md-6">
-                    <img class="p-img" src="images/Project/Project1.png" alt="Project 1" srcset="">
-                    <p class="prm">Lorem ipsum dolor, sit amet consectetur.</p>
+                <div class="col-sm-6 col-md-4">
+                    <img class="p-img" src="images/Project/Project3.png" alt="Project 3" srcset="">
+                    <a class="prm text-center" target="_blank" href="">View Project>>>></a>
 
                 </div>
-                <div class="col-sm-6 col-md-6">
-                    <img class="p-img" src="images/Project/Project2.png" alt="Project 1" srcset="">
-                    <p class="prm">Lorem ipsum dolor, sit amet consectetur.</p>
+                <div class="col-sm-6 col-md-4">
+                    <img class="p-img" src="images/Project/Project4.png" alt="Project 4" srcset="">
+                    <a class="prm text-center" target="_blank" href="https://pacific-tundra-46692.herokuapp.com/">View Project>>>></a>
                 </div>
             </div>
         </center>
+        <%-include("Footer"); %>
     </body>

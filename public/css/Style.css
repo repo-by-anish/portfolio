@@ -206,7 +206,7 @@ label {
 display: flex;
 justify-content: space-around;
 text-align: center;
-height: 18rem;
+height: auto;
 color: white;
 align-items: center;
 background: rgb(14, 103, 159);
@@ -220,7 +220,7 @@ background: rgb(14, 103, 159);
     border-radius: 1rem;
     box-sizing: border-box;
     text-align: center;
-    margin: 1rem  3rem;
+    margin: 1rem  1rem;
     border: 1.5px solid rgba(0, 0, 0, 0.464);
     padding: 1.5rem;
 }
@@ -260,7 +260,10 @@ iframe{
     display: block;
     top: 0;
 }
-
+.contact{
+    display: block;
+    margin: 2rem auto;
+}
 .timeline-with-icons .timeline-icon {
     position: absolute;
     left: -48px;
@@ -509,3 +512,6 @@ padding: 1rem;
     justify-content: space-around;
     
 }
+
+
+

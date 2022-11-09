@@ -8,14 +8,8 @@ const mongoose = require("mongoose");
 const app = express();
 app.set('view engine', 'ejs');
 
-mongoose.connect(process.env.MONGODB);
-
-// const contactSchema = {
-//     name: String,
-//     email: String,
-//     contact: Number
-// };
-const contactSchema = {  
+mongoose.connect("mongodb+srv://Anish_62072:abc_123456@cluster0.6caodho.mongodb.net/ContactDB");
+const contactSchema = {
     name: String,
     email: String,
     subject: String,
@@ -72,9 +66,13 @@ app.post("/:id", [
             subject: data.Subject,
             message: data.Message
         });
-        newMessage.save().then(() => {
-            res.redirect("/success");
-        });
+        newMessage.save((err)=>{
+            if(err){
+                console.log(err);
+            }else{
+                res.redirect("/");
+            }
+        })
     }
 });
 let port = process.env.PORT;
