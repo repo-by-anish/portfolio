@@ -380,6 +380,7 @@ padding: 1rem;
     }
 }
 @media screen and (max-width: 411px){
+
     .tglr{
       visibility: visible;
       width: 100%;
@@ -436,7 +437,6 @@ padding: 1rem;
         left: -100%;
         z-index: 4;
         width: 17rem;
-        height: 85vh;
     }
     .about{
         display: inline;
@@ -515,3 +515,15 @@ padding: 1rem;
 
 
 
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+    html {
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      width: 100vw;
+      overflow-x: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+  }
