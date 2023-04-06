@@ -437,6 +437,11 @@ padding: 1rem;
         left: -100%;
         z-index: 4;
         width: 17rem;
+        height: 95vh;
+        padding: 2rem;
+    }
+    .fa-brands {
+        margin: 5px;
     }
     .about{
         display: inline;
